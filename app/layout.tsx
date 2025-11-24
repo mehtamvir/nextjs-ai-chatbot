@@ -74,8 +74,6 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <Analytics/>
-        <SpeedInsights />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -85,6 +83,8 @@ export default function RootLayout({
           <Toaster position="top-center" />
           <SessionProvider>{children}</SessionProvider>
         </ThemeProvider>
+        <Analytics/>
+        <SpeedInsights />
       </body>
     </html>
   );
