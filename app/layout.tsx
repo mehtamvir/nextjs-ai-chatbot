@@ -73,6 +73,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
+        <Analytics/>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
