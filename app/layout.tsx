@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chat.vercel.ai"),
@@ -74,6 +75,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <Analytics/>
+        <SpeedInsights />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
